@@ -24,6 +24,7 @@ Project_paper_finder/
 │
 ├── main.py                  # Entry point
 └── README.md
+```
 
 ## Module Overview
 
@@ -113,6 +114,7 @@ Set the API key for the LLM provider (DeepSeek example).
 
 ```bash
 export DEEPSEEK_API_KEY="your_api_key_here"
+```
 
 ## Run the system
 ### Basic demo
@@ -122,12 +124,14 @@ python main.py --query "graph neural networks for traffic prediction"
 
 ### Save Results to JSONL
 Write relevance evaluation results to a JSONL file.
+```
 
 ```bash
 mkdir -p out
 python main.py \
   --query "graph neural networks for traffic prediction" \
   --out-jsonl out/results.jsonl
+```
 
 ## Output Format
 ### Result Structure
@@ -139,4 +143,4 @@ Each document produces a structured relevance result.
 - relevance_summary
 - criterion-level judgements
 - optional debug information
-
+```
